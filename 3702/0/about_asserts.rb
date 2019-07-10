@@ -15,8 +15,8 @@ class AboutAsserts < Neo::Koan
   # To understand reality, we must compare our expectations against
   # reality.
   def test_assert_equality
-    expected_value = 1 + 1
-    actual_value = 1 + 1
+    expected_value = 2
+    actual_value = 2
 
     assert expected_value == actual_value
   end
@@ -24,13 +24,13 @@ class AboutAsserts < Neo::Koan
   # Some ways of asserting equality are better than others.
   def test_a_better_way_of_asserting_equality
     expected_value = 2
-    actual_value = 1 + 1
+    actual_value = 2
 
     assert_equal expected_value, actual_value
   end
 
   # Sometimes we will ask you to fill in the values
   def test_fill_in_values
-    assert_equal 2, 1 + 1
+    assert_equal 2, 2
   end
 end
